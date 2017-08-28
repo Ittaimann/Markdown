@@ -1,36 +1,20 @@
-# Spell checking
-Test this *is* a test totally  
+# fake notes attempt
 
-1. kik
-2. lick
+## fake notes subheader
 
+- so in a world
+- with no heros
+- one man must decide
+- on a
+    - sub thingy
+>which ancient pholosopher he must write about
 
+## but little did he _know_ **THAT**
+1. his entire life was a lie
+2. that he could not and would not suceed
+3. unless he learned how to ``` code such as this
+```
 
-- DICKS
-- frig
+but bear witness unto a picture of undescricable power
 
-    frigin shmigne licken figing asdfkas laskjgdlkjs lsjfjlk
-
-    - ;ocl4
-    - a
-        - a
-            - a
-            - a
-            - b
-            - a
-    [Here is the link to googles
-    how page](https://www.google.com)
-
-    ya see
-
-inline `this is how`
-
-
->block quote attempt
-
->attempt two
-
-
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-some **<span style="color:red">red this is how you do color** text</span?>
+![this is that picture](https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/082016/untitled-1_5.png?itok=8JWuhnSo)
