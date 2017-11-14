@@ -129,3 +129,37 @@ variance(?): $\sigma >= 1$
     - mean: $\lambda$
     - variance: $\lambda$
     - MLE: $\hat{\lambda}=\bar{x}(n)$
+
+## coefficient of variation
+## - $\delta \hat{=} \frac{\sqrt{var}}{E[x]}\approx \frac{\sqrt{S^n}}{\bar{x}(n)}$ 
+ - notice dimensionaless number because is measure of standard deviation in units of the mean 
+ - not well defined if E[X]=0
+ - **but** value can give us strong hints on what is the underlying distribution
+ - EX:
+    - the $\delta$ is always 1 for exponential distribution 
+    - $\delta$ always greater then 1 for hyper exponential (?)
+    -  $\delta$ always less then 1 for erlang-k
+
+## how to pick a distribution
+- how to pick from all these choices  
+1 - from outside reasoning  
+2 - Look for characteristic values of "point" (means, variances, coefficient of variation) statistics  
+    - non negative?  
+    - fall in range?
+      
+    3 - histograms  
+    - a) partition frequency in each range
+    - b) count frequency in each range
+    - c) inspect histogram: what does it look like? try MLE?
+    - d) compare visually for goodness of fit
+
+### testing for goodness of fit
+1) ad hoc method  
+    a) do key point values mathc?  
+    b)density or histogram plots and compare to theoreticla fit. "Looks similar"
+2) graphical methods   
+    A) q-q plots  
+    b) p-p plots
+3) formal statistics test   
+    A) chi-sq  
+    b) k-s tests
