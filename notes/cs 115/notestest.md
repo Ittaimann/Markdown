@@ -90,3 +90,42 @@ hyper-exponential: choosing one of *R* exponentials with rate $1/\beta_i$ with p
 ### f(x)=$\displaystyle\sum_{i=1}^n \frac {P_i}{\beta_i}e^\frac{-x}{\beta_i}$
 mean:$\displaystyle\sum_{i=1}^n P_i\beta_i$
 variance(?): $\sigma >= 1$
+
+
+
+
+#
+# Lecture 2 with these
+
+## more distributions       
+- choose distributions   
+
+    1 -  pick  
+    2 - fit(MLE)  
+    3 - check for goodness  
+- [Bernoulli distribution (p)](https://en.wikipedia.org/wiki/Bernoulli_distribution)
+    - coin toss 
+    - P(k)= {p,k=0 "heads }  
+            {1-p, k=1 "tails }  
+    - mean: p -> $\bar(x)$
+    - variance: p(1-p)
+    - $\delta$: $\sqrt{(1-p)/p}$
+    - $\bar(x)(1-\bar(x))= S^2(n)$
+- [binomial distribution(n,p)](https://en.wikipedia.org/wiki/Binomial_distribution)
+    - nuber of succsess in i Bernoulli trials
+    - p(k)=$n\choose{k}$ $p^k (1-p)^{n-k}$
+    - mean: $np$ n trials, each with p probability
+    - variance: $np(1-p)$
+
+- [geometric distribution](https://en.wikipedia.org/wiki/Geometric_distribution)
+    - number of failures before the first Bernoulli trial
+    - p(k)= $(1-p^k)p$, k =0,1,...
+    - mean: $\frac{1-p}{p}$
+    - variance: $\frac{1-p}{p^2}$
+    - MLE: $\hat{p}= \frac{1}{1+\bar{x}(n)}$
+- [possion distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
+    - number of events in an interval(area or volume) where events are independent i.d. uniformly distributed
+    - P(k)=$\frac{\lambda^k}{k!}e^-\lambda$
+    - mean: $\lambda$
+    - variance: $\lambda$
+    - MLE: $\hat{\lambda}=\bar{x}(n)$
