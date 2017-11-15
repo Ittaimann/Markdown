@@ -162,4 +162,4 @@ variance(?): $\sigma >= 1$
     b) p-p plots
 3) formal statistics test   
     A) chi-sq  
-    b) k-s tests a 
+    b) k-s tests
