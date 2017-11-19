@@ -163,3 +163,66 @@ variance(?): $\sigma >= 1$
 3) formal statistics test   
     A) chi-sq  
     b) k-s tests
+
+# Lecture before midterm
+
+## [fermies paradox](https://en.wikipedia.org/wiki/Fermi_paradox)
+- life occured as single cell almost as soon as possible, took a while to go from single to multi celluar
+- We then discovered other planets, 
+- we then find other planets and interterestrial travel
+- in a few million years, even at 1 light year a 1000 years we will traverse the entire galaxy.
+- if this is the case... where is everyone? why do the alieans who have had so much longer to traverse the galaxy 
+
+## Chooisng distribution (for the 11th time)
+ 1) choose
+ 2) fit parameters
+ 3) test for goodness of fit ( if bad go back to 1 ) 
+
+## probability plots (p-p, Q-Q plots)
+ - take set of data and compare it to our distributions. We can even look at a theoretical distribution and sort it  
+ 1) sort $X_1...X_n$ into non decreasing order $\hat{X_1}...\hat{X_n}$ where the hat means its sorted. $\hat{X_i}=i^{th}$ order statistic   
+    -  set $y=\frac{i}{n}$ for $x=\hat{X_i}$ 
+
+    -    one disadvantage is that cdf's tend to just look like S - shaped curves.   
+        **INSERT THE PICTURE OF THE GRAPH**
+        **INSERT THE PICTURE OF THE GRAPH**  
+     -   say we have two sorted sample of points  $\hat{X_1}...\hat{X_n}$ and  $\hat{Y_1}...\hat{Y_n}$  
+     -   this creates two graphs, we must now take the difference. We choose a point p on the horizontal and relate it to the vertical distance. this gets you an $F_x(p)$ and $F_y(p)$     **(This will be used for the pp plots)**
+### Q-Q plots
+   -   We can also place a *q* on the vertical and do a similar thing to get the horizontal distances  $F_{x}^{-1}(q)$ and $F_{y}^{-1}(q)$. This gives you a q-q plot  
+        **INsert the pic**   
+   -   March through each values of q, and plot the (X,Y) of the q for each q   
+      -  EX:  
+            A) 45 degree line thru origin if $F_x=F_y$  
+            B) 45 dgree line not thru the origin if $F_X$ and $F_Y$ differ by a location parameter (y=x+q)  
+            C) straight line not at 45 degrees if they differ by a scale parameter.  
+            - through orign -> y=mx
+            - not through orign -> y=mx+b 
+
+         d) Funny curve -otherwise
+
+### PP plots 
+- march along the horizontal axis through values called p and simply plot $F_x(p),F_y(p)$
+
+### notes  
+ - Q-Q plots emphasis differences in the tails of the distributions.
+ - P-P plots emphasise the differences in the middle of the distribution 
+
+### [Chi (ki, or the flem sound) - squared tests](https://en.wikipedia.org/wiki/Chi-squared_distribution)
+- let $Y_1...Y_n$ be independent and identically distributed standard normal N(0,1) random variables
+- then $X=Y{_1}^2 +... +Y{_n}^2$ is non negative and defines te $\chi$ square distribution with n degrees of freedom
+- PDF and CDF are tabulated in many [places](https://en.wikipedia.org/wiki/Chi-squared_distribution) 
+- **Chi squared test**
+    - take your data $X_1...X_n$ and place them into histogram bins $(-\infty$ or $a_0 ,a_1),[a_1,a_2),[a_2,a_3)...[a_{k-1},\infty$ or $a_k)$
+    the $a_i$'s represent k-1 "Cut points" so $B_1,B_2,...B_k$ which means we have k-1 degrees of freedom 
+    - Define $N_J$ = # samples that fall in $B_i$ note $\epsilon N_j=n$
+    - Q: given theoretical distribution f(x), let $p_j=\int_{a_j-1}^{_j} F(x) dx=F(a_j)-F(a_j-1)=$ probability of sample from f falling into bin back
+    - IF $X_i$'s came from F, we expect $p_J*n$ samples in $B_j$
+    - ### DEFINE $\chi^2=\sum_{j=1}^{k}\frac{(N_j-np_j)^2}{np_j}$
+        - ### what: recall Z(N)=$\frac{\bar{X}(n)-\mu}{\sqrt{\sigma^2/n}}$ => n(0,1) as n->$\infty$
+        - ### so  $(Z(N))^2=\frac{\bar{X}(n)-\mu}{\sigma^2}\bar{=}\frac{(N_j-np_j)^2}{np_j(1-p_i)}$ where $p_j$ is small $1-p_i \approx 1$
+    - recall binomial distribution distinct(n,p)=# heads in n flips with p heads,
+        -  mean is np
+        - variance is np(1-p)
+    - AS N GOES TO INFINITY AND BINS GO TO INFINITY CHI SQUARED IS THE SUM OF THE SQUARES OF N STANDARD NORMAL VARIBLES
+    - if the difference between n standard normal variables are close to  chi squared is small enough, you have chosen the right F(x)
