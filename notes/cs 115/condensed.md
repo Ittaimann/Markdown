@@ -203,10 +203,11 @@
  - variance: $\frac{(b-a)^2}{12}$
  - comments: Max entropy is sal^h when no info is known
 ## [Exponential](https://en.wikipedia.org/wiki/Exponential_distribution) 
+- note that he has r for rate, but some places use $\lambda$
  - symbol:  rate r=1/$\beta$, beta =average   inter arrival 
  - pmf: $f(x)=re^{-rt}$, t>=0  
  - cdf: $F(x)=1-e^{-rt}$
- - mean: $\beta$
+ - mean: $\beta=\frac{1}{\lambda}$
  - variance: $\beta^2$
  - comments: mle $\hat{\beta}=\bar{X}$, def: coefficient of variation = $\frac{\alpha}{\mu}= \sigma$ for exp distribution =1 $\approx \frac {\sqrt{S^2(n)}}{\bar(X)(n)}$
     - "short" proof for MLE of exponential:
@@ -284,6 +285,13 @@
 -  testing for goodness of fit   
     1) ad hoc method
         a) do key  
+        b)density or histogram plots and compare to theoreticla fit. "Looks similar"
+    2) graphical methods   
+        A) q-q plots  
+        b) p-p plots
+    3) formal statistics test   
+        A) chi-sq  
+         b) k-s tests
 # 2 types of errors
 - test positive: truth (unkown of hypothesis): this is a table of wherther the test was posisitive or negative, and if te hypothesis is correct or not
 
