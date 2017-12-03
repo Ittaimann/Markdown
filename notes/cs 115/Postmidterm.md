@@ -27,9 +27,16 @@
     - do a numerical integration of euler. 
     - based on the assignment, the delta T to the k is a global error
     - second order differential equations just requires second deriviates. third means third...               
+    - ***THE MAIN PART OF THIS IS ERROR ANALYSIS*** simulation isn't hard( ;) ) but what we need to really care about is how difficult it is.   
     - RK 4 is a fourth order Runge-Kutta method. 
+    - you stopped paying attention again you dumby...
+    - error approximatley delta T^k *c
+    - log(error) is approx klog(delta T)
+    - RK4 should be best, its a bit  slower but the percision is so much better
+    - part 3 
+        - over a long time, one of the solutions will have a gross destruction of the conservation of energy.
 - Project 3
-    - every packet is same size 1 (b,kb,mb doesnt matter). Packets can however collide and destroy each other. 
+    - every packet is same size 1 (b,kb,mb doesnt matter). Packets can however collide and destroy each other.    
     - because each packet is length 1 its not hard to detect a packet collision. 
             
             |----| packet 1
@@ -37,4 +44,7 @@
                     both are destroyed
             |---| P1
                   |---| P2 
-                    pakckets transmit?                             
+                    pakckets transmit?              
+    -  every host knows if its packet is transmitted by telling if other packets tried to transmit at the same time.
+    - what are we actually doing
+        - part 1: what is the max arrival rate, what is the max R show as a plot of R               
